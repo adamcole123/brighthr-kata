@@ -10,10 +10,16 @@ namespace CheckoutKata.Library
     {
         private Product Product { get; set; }
         private int Quantity { get; set; }
+        public int Price { get { return Product.UnitPrice * Quantity; } }
         public BasketItem(Product product, int quantity) 
         { 
             Product = product;
             Quantity = quantity;
+        }
+
+        internal int GetPrice()
+        {
+            throw new NotImplementedException();
         }
     }
 }
