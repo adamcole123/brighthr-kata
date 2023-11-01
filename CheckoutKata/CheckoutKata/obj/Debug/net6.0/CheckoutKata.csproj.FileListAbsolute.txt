@@ -1,0 +1,15 @@
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\bin\Debug\net6.0\CheckoutKata.exe
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\bin\Debug\net6.0\CheckoutKata.deps.json
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\bin\Debug\net6.0\CheckoutKata.runtimeconfig.json
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\bin\Debug\net6.0\CheckoutKata.dll
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\bin\Debug\net6.0\CheckoutKata.pdb
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\CheckoutKata.csproj.AssemblyReference.cache
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\CheckoutKata.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\CheckoutKata.AssemblyInfoInputs.cache
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\CheckoutKata.AssemblyInfo.cs
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\CheckoutKata.csproj.CoreCompileInputs.cache
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\CheckoutKata.dll
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\refint\CheckoutKata.dll
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\CheckoutKata.pdb
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\CheckoutKata.genruntimeconfig.cache
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\ref\CheckoutKata.dll

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata", "CheckoutKata\CheckoutKata.csproj", "{C19F888A-0B9E-49D8-B2AC-C0C507C6034E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Library", "CheckoutKata.Library\CheckoutKata.Library.csproj", "{FACD4CB9-07BE-4EB9-A1FF-612DA2BD1482}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Tests", "CheckoutKata.Tests\CheckoutKata.Tests.csproj", "{A096045E-A7D0-46EA-93C6-FB06ECF85463}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C19F888A-0B9E-49D8-B2AC-C0C507C6034E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C19F888A-0B9E-49D8-B2AC-C0C507C6034E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C19F888A-0B9E-49D8-B2AC-C0C507C6034E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FACD4CB9-07BE-4EB9-A1FF-612DA2BD1482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FACD4CB9-07BE-4EB9-A1FF-612DA2BD1482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FACD4CB9-07BE-4EB9-A1FF-612DA2BD1482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FACD4CB9-07BE-4EB9-A1FF-612DA2BD1482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A096045E-A7D0-46EA-93C6-FB06ECF85463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A096045E-A7D0-46EA-93C6-FB06ECF85463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A096045E-A7D0-46EA-93C6-FB06ECF85463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A096045E-A7D0-46EA-93C6-FB06ECF85463}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
