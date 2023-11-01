@@ -8,7 +8,7 @@ namespace CheckoutKata.Library
 {
     public interface ICheckout
     {
-        void Scan(string item);
+        IEnumerable<BasketItem> Scan(string item);
         int GetTotalPrice();
     }
 }
