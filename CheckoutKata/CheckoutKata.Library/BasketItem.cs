@@ -10,7 +10,7 @@ namespace CheckoutKata.Library
     {
         public Product Product { get; set; }
         public int Quantity { get; set; }
-        public int Price { get { return Product.UnitPrice * Quantity; } }
+        public int Price { get { return GetPrice(); } }
         public BasketItem(Product product, int quantity) 
         { 
             Product = product;
@@ -19,7 +19,23 @@ namespace CheckoutKata.Library
 
         internal int GetPrice()
         {
-            throw new NotImplementedException();
+            if (Product.SpecialPrice != null) 
+            {
+                (int quantity, int price) = Product.SpecialPrice.Value;
+
+                if(Quantity < quantity)
+                {
+                    return Quantity * Price;
+                }
+
+                int dealAmount = (Quantity / quantity) * price;
+
+                int regularAmount = (Quantity % quantity) * Product.UnitPrice;
+
+                return dealAmount + regularAmount;
+            }
+
+            return Quantity * Price;
         }
     }
 }

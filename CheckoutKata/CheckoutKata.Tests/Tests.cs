@@ -60,5 +60,40 @@ namespace CheckoutKata.Tests
             Assert.AreEqual(1, basket.Count());
             Assert.AreEqual(2, basket.FirstOrDefault(ba => ba.Product.Sku == "A").Quantity);
         }
+
+        [TestMethod]
+        public void EnsureCheckoutPriceReturnsSpecialPrice()
+        {
+            List<Product> products = new List<Product>
+            {
+                new Product("A", 50, (3, 70))
+            };
+
+            ICheckout checkout = new Checkout(products);
+
+            checkout.Scan("A");
+            checkout.Scan("A");
+            checkout.Scan("A");
+
+            Assert.AreEqual(70, checkout.GetTotalPrice());
+        }
+
+        [TestMethod]
+        public void EnsureCheckoutPriceReturnsSpecialPriceWithRemainder()
+        {
+            List<Product> products = new List<Product>
+            {
+                new Product("A", 50, (3, 70))
+            };
+
+            ICheckout checkout = new Checkout(products);
+
+            checkout.Scan("A");
+            checkout.Scan("A");
+            checkout.Scan("A");
+            checkout.Scan("A");
+
+            Assert.AreEqual(120, checkout.GetTotalPrice());
+        }
     }
 }
