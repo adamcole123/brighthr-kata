@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CheckoutKata.Library\CheckoutKata.Library.csproj" />
+  </ItemGroup>
+
 </Project>

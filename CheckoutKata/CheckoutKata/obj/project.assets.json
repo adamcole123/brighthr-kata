@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "CheckoutKata.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CheckoutKata.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CheckoutKata.Library.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CheckoutKata.Library/1.0.0": {
+      "type": "project",
+      "path": "../CheckoutKata.Library/CheckoutKata.Library.csproj",
+      "msbuildProject": "../CheckoutKata.Library/CheckoutKata.Library.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "CheckoutKata.Library >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\adamc\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projects\\brighthr-kata\\CheckoutKata\\CheckoutKata.Library\\CheckoutKata.Library.csproj": {
+              "projectPath": "D:\\Projects\\brighthr-kata\\CheckoutKata\\CheckoutKata.Library\\CheckoutKata.Library.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

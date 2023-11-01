@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "CheckoutKata/1.0.0": {
+        "dependencies": {
+          "CheckoutKata.Library": "1.0.0"
+        },
         "runtime": {
           "CheckoutKata.dll": {}
+        }
+      },
+      "CheckoutKata.Library/1.0.0": {
+        "runtime": {
+          "CheckoutKata.Library.dll": {}
         }
       }
     }
   },
   "libraries": {
     "CheckoutKata/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CheckoutKata.Library/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

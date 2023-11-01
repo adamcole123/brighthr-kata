@@ -13,3 +13,6 @@ D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\refint\Chec
 D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\CheckoutKata.pdb
 D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\CheckoutKata.genruntimeconfig.cache
 D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\ref\CheckoutKata.dll
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\bin\Debug\net6.0\CheckoutKata.Library.dll
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\bin\Debug\net6.0\CheckoutKata.Library.pdb
+D:\Projects\brighthr-kata\CheckoutKata\CheckoutKata\obj\Debug\net6.0\CheckoutKata.csproj.CopyComplete

@@ -25,7 +25,7 @@ namespace CheckoutKata.Library
 
                 if(Quantity < quantity)
                 {
-                    return Quantity * Price;
+                    return Quantity * Product.UnitPrice;
                 }
 
                 int dealAmount = (Quantity / quantity) * price;
@@ -35,7 +35,7 @@ namespace CheckoutKata.Library
                 return dealAmount + regularAmount;
             }
 
-            return Quantity * Price;
+            return Quantity * Product.UnitPrice;
         }
     }
 }
