@@ -8,8 +8,8 @@ namespace CheckoutKata.Library
 {
     public class BasketItem
     {
-        private Product Product { get; set; }
-        private int Quantity { get; set; }
+        public Product Product { get; set; }
+        public int Quantity { get; set; }
         public int Price { get { return Product.UnitPrice * Quantity; } }
         public BasketItem(Product product, int quantity) 
         { 

@@ -3,10 +3,13 @@
     public class Checkout : ICheckout
     {
         private List<BasketItem> Basket = new List<BasketItem>();
-        private List<Product> Products { get; set; }
-        public Checkout(List<Product> products = null)
+        private List<Product> Products = new List<Product>();
+        public Checkout(List<Product> products)
         {
-            Products = products;
+            if(products != null)
+            {
+                Products.AddRange(products);
+            }
         }
         public int GetTotalPrice()
         {
@@ -20,14 +23,22 @@
                 throw new Exception("No product with that SKU.");
             }
 
-            var product = Products.First(prod => prod.Sku == item);
+            var product = Products.FirstOrDefault(prod => prod.Sku == item);
 
             if(product == null)
             {
                 throw new Exception("No product with that SKU.");
             }
 
-            Basket.Add(new BasketItem(product, 1));
+            var basketItem = Basket.FirstOrDefault(b => b.Product.Sku == item);
+
+            if(basketItem == null)
+            {
+                Basket.Add(new BasketItem(product, 1));
+            } else
+            {
+                basketItem.Quantity++;
+            }
 
             return Basket;
         }

@@ -30,7 +30,7 @@ namespace CheckoutKata.Tests
         [TestMethod]
         public void EnsureScanFailsWithNoProduct()
         {
-            ICheckout checkout = new Checkout();
+            ICheckout checkout = new Checkout(null);
 
             try
             {
@@ -42,6 +42,23 @@ namespace CheckoutKata.Tests
                 Assert.AreEqual("No product with that SKU.", ex.Message);
             }
 
+        }
+
+        [TestMethod]
+        public void EnsureScanIncrementsBasketItemQuantity()
+        {
+            List<Product> products = new List<Product>
+            {
+                new Product("A", 50, null)
+            };
+
+            ICheckout checkout = new Checkout(products);
+
+            checkout.Scan("A");
+            var basket = checkout.Scan("A");
+
+            Assert.AreEqual(1, basket.Count());
+            Assert.AreEqual(2, basket.FirstOrDefault(ba => ba.Product.Sku == "A").Quantity);
         }
     }
 }
