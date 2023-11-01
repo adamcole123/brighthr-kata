@@ -95,5 +95,13 @@ namespace CheckoutKata.Tests
 
             Assert.AreEqual(120, checkout.GetTotalPrice());
         }
+
+        [TestMethod]
+        public void EnsureBasketItemGetsTheCorrectPrice()
+        {
+            BasketItem basketItem = new BasketItem(new Product("A", 50, (2, 70)), 3);
+
+            Assert.AreEqual(120, basketItem.Price);
+        }
     }
 }
